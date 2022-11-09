@@ -14,7 +14,6 @@ public class ContainsElementAverage {
 
         contains(arr, element);
     }
-
     public static boolean contains(int[] arr, int element) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == element) {

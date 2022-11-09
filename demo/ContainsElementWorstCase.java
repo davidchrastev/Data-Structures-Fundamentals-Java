@@ -12,6 +12,6 @@ public class ContainsElementWorstCase {
 
         int element = arr[arr.length - 1] = -1;
 
-        ContainsElementAverage.contains(arr, element);
+        System.out.println(ContainsElementAverage.contains(arr, element));
     }
 }
