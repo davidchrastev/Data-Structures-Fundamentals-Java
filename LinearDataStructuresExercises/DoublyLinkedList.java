@@ -93,11 +93,8 @@ public class DoublyLinkedList<E> {
 
 
     public E getLast() {
-        Node<E> current = this.head;
-        while (current.next != null) {
-            current = current.next;
-        }
-        return current.element;
+        ensureNotEmpty();
+        return this.tail.element;
     }
 
 
@@ -118,7 +115,7 @@ public class DoublyLinkedList<E> {
 
             @Override
             public boolean hasNext() {
-                return current != null;
+                return current.next == null;
             }
 
             @Override
