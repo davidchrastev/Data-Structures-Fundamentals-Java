@@ -1,5 +1,6 @@
 package LinearDataStructuresExercises;
 
+
 import java.util.Iterator;
 
 public class DoublyLinkedList<E> {
@@ -93,16 +94,8 @@ public class DoublyLinkedList<E> {
 
 
     public E getLast() {
-<<<<<<< HEAD
         ensureNotEmpty();
         return this.tail.element;
-=======
-        Node<E> current = this.head;
-        while (current.next != null) {
-            current = current.next;
-        }
-        return current.element;
->>>>>>> origin/master
     }
 
 
@@ -123,11 +116,7 @@ public class DoublyLinkedList<E> {
 
             @Override
             public boolean hasNext() {
-<<<<<<< HEAD
                 return current.next == null;
-=======
-                return current != null;
->>>>>>> origin/master
             }
 
             @Override
