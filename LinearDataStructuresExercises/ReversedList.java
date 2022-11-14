@@ -2,26 +2,26 @@ package LinearDataStructuresExercises;
 
 import java.util.Iterator;
 
-public class ReversedList<E> {
+public class ReversedList<E> implements Iterable<E> {
 
     private Object[] elements;
     private static final int Initial_Capacity = 2;
     private int size;
     private int capacity;
+    private int head;
 
     public ReversedList() {
         this.elements = new Object[Initial_Capacity];
         this.size = 0;
         this.capacity = Initial_Capacity;
+        head = 0;
     }
 
-    public boolean add(E element) {
+    public void add(E element) {
         if (this.size == this.capacity) {
             resize();
         }
-
         this.elements[this.size++] = element;
-        return true;
     }
 
     public E get(int index) {
@@ -29,26 +29,26 @@ public class ReversedList<E> {
             throw new IndexOutOfBoundsException("Not valid index");
         }
 
-        return (E) this.elements[index];
+        return (E) this.elements[this.size - 1 - index];
     }
 
 
-    public E removeAt(int index) {
+    public void removeAt(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Not valid index");
         }
-        Object previousElement = this.elements[index];
-        size--;
-        shiftLeft(index);
 
-        return (E) previousElement;
-    }
+        int elementIndex = this.size -1 - index;
 
-    private void shiftLeft(int index) {
-        for (int i = index; i < this.size; i++) {
+        for (int i = index ; i < this.size - 1; i++) { // ako e elementIndex/ тогава гърми последния тест !!!
             this.elements[i] = this.elements[i + 1];
         }
+
+        this.size--;
+
     }
+
+
 
 
     public int size() {
@@ -60,7 +60,8 @@ public class ReversedList<E> {
     }
 
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+
+        return  new Iterator<E>() {
             int index = size - 1;
             @Override
             public boolean hasNext() {
@@ -69,7 +70,7 @@ public class ReversedList<E> {
 
             @Override
             public E next() {
-                return get(index--);
+                return (E) elements[index--];
             }
         };
 
