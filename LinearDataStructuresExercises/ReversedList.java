@@ -25,6 +25,7 @@ public class ReversedList<E> implements Iterable<E> {
     }
 
     public E get(int index) {
+
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Not valid index");
         }
@@ -38,9 +39,7 @@ public class ReversedList<E> implements Iterable<E> {
             throw new IndexOutOfBoundsException("Not valid index");
         }
 
-        int elementIndex = this.size -1 - index;
-
-        for (int i = index ; i < this.size - 1; i++) { // ako e elementIndex/ тогава гърми последния тест !!!
+        for (int i = index ; i < this.size - 1; i++) {
             this.elements[i] = this.elements[i + 1];
         }
 
