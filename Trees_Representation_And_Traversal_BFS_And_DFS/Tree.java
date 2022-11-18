@@ -65,6 +65,35 @@ public class Tree<E> {
 
 
     public void addChild(E parentKey, Tree<E> child) {
+        Tree<E> search = find(parentKey);
+
+        if (search == null) {
+            throw new IllegalArgumentException();
+        }
+
+        search.children.add(child);
+        child.parent = search;
+    }
+
+    private Tree<E> find(E parentKey) {
+
+        ArrayDeque<Tree<E>> childrenQueue = new ArrayDeque<>();
+
+        childrenQueue.offer(this);
+
+        while (!childrenQueue.isEmpty()) {
+            Tree<E> current = childrenQueue.poll();
+
+            if (current.value == parentKey) {
+                return current;
+            }
+
+            for (Tree<E> child : current.children) {
+                childrenQueue.offer(child);
+            }
+
+        }
+        return null;
 
     }
 
