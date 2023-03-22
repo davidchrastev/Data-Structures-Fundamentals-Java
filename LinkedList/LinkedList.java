@@ -18,13 +18,13 @@ public class LinkedList {
     }
 
     // Constructor for initializing the linked list with a value
-    public LinkedList(int value) {
+    public LinkedList() {
         // Create a new node called newNode with the given value,
         // and point both the head and tail at it
-        Node newNode = new Node(value);
-        head = newNode;
-        tail = newNode;
-        length = 1; // The length of the list is 1
+//        Node newNode = new Node(value);
+//        head = newNode;
+//        tail = newNode;
+//        length = 1; // The length of the list is 1
     }
 
     public void printList() {
@@ -59,8 +59,37 @@ public class LinkedList {
     }
 
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList(4);
+        LinkedList linkedList = new LinkedList();
 
+//        linkedList.prepend(1);
+//        linkedList.prepend(2);
+
+        System.out.println(linkedList.isEmpty());
         linkedList.printList();
     }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
+        }
+        tail = newNode;
+    }
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
+    }
+    public boolean isEmpty() {
+        return length < 0 ;
+    }
+
 }
