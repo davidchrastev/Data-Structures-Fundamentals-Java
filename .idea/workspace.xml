@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="LinkedList removeFirst">
+    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="Adding more methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/LinkedList.java" afterDir="false" />
     </list>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679569142673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding more methods">
+      <created>1679570028805</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679570028805</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +148,8 @@
     <MESSAGE value="Adding other methods" />
     <MESSAGE value="LinkedList" />
     <MESSAGE value="LinkedList removeFirst" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList removeFirst" />
+    <MESSAGE value="Adding more methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding more methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
