@@ -61,14 +61,11 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
 
-        linkedList.prepend(1);
-        linkedList.prepend(2);
-        linkedList.append(12);
-        linkedList.printList();
+        linkedList.append(1);
+        linkedList.append(2);
 
-        System.out.println(linkedList.removeLast().value);
-        System.out.println(linkedList.removeLast().value);
-        System.out.println(linkedList.removeLast().value);
+        System.out.println(linkedList.removeFirst().value);
+
         System.out.println(linkedList.removeLast());
 
     }
@@ -118,6 +115,24 @@ public class LinkedList {
         }
 
         return temp;
+    }
+
+    public Node removeFirst() {
+        if (length == 0) {
+            return null;
+        }
+
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        length--;
+
+        if (length == 0) {
+            tail = null;
+        }
+
+        return temp;
+
     }
 
 }
