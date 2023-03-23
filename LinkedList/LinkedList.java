@@ -61,11 +61,16 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
 
-//        linkedList.prepend(1);
-//        linkedList.prepend(2);
-
-        System.out.println(linkedList.isEmpty());
+        linkedList.prepend(1);
+        linkedList.prepend(2);
+        linkedList.append(12);
         linkedList.printList();
+
+        System.out.println(linkedList.removeLast().value);
+        System.out.println(linkedList.removeLast().value);
+        System.out.println(linkedList.removeLast().value);
+        System.out.println(linkedList.removeLast());
+
     }
 
     public void append(int value) {
@@ -76,6 +81,7 @@ public class LinkedList {
             tail.next = newNode;
         }
         tail = newNode;
+        length++;
     }
     public void prepend(int value) {
         Node newNode = new Node(value);
@@ -88,8 +94,30 @@ public class LinkedList {
         }
         length++;
     }
-    public boolean isEmpty() {
-        return length < 0 ;
+
+
+    public Node removeLast() {
+        if (length == 0) {
+            return null;
+        }
+        Node temp = head;
+        Node pre = head;
+
+        while (temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+
+        tail = pre;
+        tail.next = null;
+        length--;
+
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+
+        return temp;
     }
 
 }
