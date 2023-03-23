@@ -63,10 +63,13 @@ public class LinkedList {
 
         linkedList.append(1);
         linkedList.append(2);
+        linkedList.append(3);
+        linkedList.append(4);
+        linkedList.append(5);
+        linkedList.append(6);
 
-        System.out.println(linkedList.removeFirst().value);
+        System.out.println(linkedList.get(2).value);
 
-        System.out.println(linkedList.removeLast());
 
     }
 
@@ -133,6 +136,40 @@ public class LinkedList {
 
         return temp;
 
+    }
+
+    public Node get(int index) {
+
+        if (length == 0) {
+            return null;
+        }
+        if (index >= length || index < 0) {
+            return null;
+        }
+
+        Node temp = head;
+
+//        while (counter != index) {
+//            temp = temp.next;
+//
+//            counter++;
+//        }
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+
+        return temp;
+    }
+
+    public boolean set(int index, int value) {
+        Node temp = get(index);
+
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+
+        return false;
     }
 
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="LinkedList">
+    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="LinkedList removeFirst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/LinkedList.java" afterDir="false" />
     </list>
@@ -111,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679568673396</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="LinkedList removeFirst">
+      <created>1679569142673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679569142673</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,64 +140,16 @@
     <MESSAGE value="LinkedList dive in." />
     <MESSAGE value="Adding other methods" />
     <MESSAGE value="LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList" />
+    <MESSAGE value="LinkedList removeFirst" />
+    <option name="LAST_COMMIT_MESSAGE" value="LinkedList removeFirst" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>83</line>
+          <line>86</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>95</line>
-          <properties class="LinkedList.LinkedList" method="removeLast">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
