@@ -149,11 +149,6 @@ public class LinkedList {
 
         Node temp = head;
 
-//        while (counter != index) {
-//            temp = temp.next;
-//
-//            counter++;
-//        }
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
@@ -250,5 +245,21 @@ public class LinkedList {
         }
         // Return the Node object representing the middle node of the linked list
         return slow;
+    }
+
+    public boolean hasLoop() {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
