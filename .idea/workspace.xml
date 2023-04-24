@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="Finding Middle Node in LinkedList">
+    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="Has loop exercise">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,7 @@
       <updated>1667812123106</updated>
       <workItem from="1667814868294" duration="1420000" />
       <workItem from="1667816362907" duration="219000" />
-      <workItem from="1682343339740" duration="644000" />
+      <workItem from="1682343339740" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="Learning Data Structures">
       <created>1667812164992</created>
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682343670896</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Has loop exercise">
+      <created>1682344214513</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682344214513</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +187,8 @@
     <MESSAGE value="More methods" />
     <MESSAGE value="Reverse linkedList" />
     <MESSAGE value="Finding Middle Node in LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finding Middle Node in LinkedList" />
+    <MESSAGE value="Has loop exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Has loop exercise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
