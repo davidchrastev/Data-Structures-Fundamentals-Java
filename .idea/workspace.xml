@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="Reverse between given indexes">
+    <list default="true" id="66a7e345-8383-49f6-852e-379f660379f4" name="Changes" comment="Given an int x the left side of the linkedList is integers that are smaller than x this is partitionList method">
       <change beforePath="$PROJECT_DIR$/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <updated>1667812123106</updated>
       <workItem from="1667814868294" duration="1420000" />
       <workItem from="1667816362907" duration="219000" />
-      <workItem from="1682343339740" duration="1579000" />
+      <workItem from="1682343339740" duration="1890000" />
     </task>
     <task id="LOCAL-00001" summary="Learning Data Structures">
       <created>1667812164992</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682344805756</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Given an int x the left side of the linkedList is integers that are smaller than x this is partitionList method">
+      <created>1682345194418</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682345194418</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,14 +210,15 @@
     <MESSAGE value="Has loop exercise" />
     <MESSAGE value="Finding algorithms" />
     <MESSAGE value="Reverse between given indexes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverse between given indexes" />
+    <MESSAGE value="Given an int x the left side of the linkedList is integers that are smaller than x this is partitionList method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Given an int x the left side of the linkedList is integers that are smaller than x this is partitionList method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/LinkedList/LinkedList.java</url>
-          <line>86</line>
+          <line>89</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
